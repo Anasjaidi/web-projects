@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		link(rel="stylesheet", href="./css/main.css")
+		title chrono
+	body
+		.chrono(class="bg-gray-300 w-screen h-screen flex flex-col justify-center items-center")
+			.time
+				p(class="pageTime text-6xl font-semibold mb-6 tracking-wider") 00:00:00:00
+			.btns 
+				span(id="strt" class="px-5 py mr-4 border border-gray-900 rounded-2xl text-3xl cursor-pointer") start
+				span(id="stp" class="px-5 py mr-4 border border-gray-900 rounded-2xl text-3xl cursor-pointer") stop
+				span(id="rst" class="px-5 py mr-4 border border-gray-900 rounded-2xl text-3xl cursor-pointer") reset
+		script(src="./js/main.js") 
