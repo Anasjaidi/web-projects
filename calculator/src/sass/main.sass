@@ -1,0 +1,10 @@
+@use './_tailwind'
+
+.calculator
+	@apply grid w-[45%] shadow-md bg-white mx-auto mt-16 grid-cols-4 grid-rows-6 gap-8 p-6
+	div
+		@apply col-span-4 row-span-1 border
+	p
+		@apply col-span-1 row-span-1 border flex justify-center items-center text-xl py-3 px-8
+	.equal 
+		@apply row-span-4 bg-blue-300

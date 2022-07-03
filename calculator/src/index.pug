@@ -1,0 +1,16 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		link(rel="stylesheet", href="css/main.css")
+		title Document
+	body
+		.calculator 
+			.input
+			- var childs = ['+', '-', 'x', '÷', 7, 8, 9, '=', 4, 5, 6, 1, 2, 3, 0, '.', 'C']
+			- var childsClasses = ['addition', 'subtraction', 'multiplication', 'devide', "n7", 'n8', 'n9', 'equal', 'n4', 'n5', 'n6', 'n1', 'n2', 'n3', 'n0', 'point', 'clear']
+			- for (var i = 0; i < childs.length; i++)
+				p(class=childsClasses[i]) #{childs[i]}
+	script(src="js/main.js") 
